@@ -1,0 +1,107 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Mon Aug 24 15:37:00 2015
+;; Desktop file format version 206
+;; Emacs version 24.5.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (21978 44412 581853 0) (desktop . "206") "mohana@bigMacWork.local" nil nil ((((font-backend mac-ct ns) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars . right) (foreground-color . "#F8F8F2") (background-color . "#272822") (line-spacing) (left-fringe . 10) (right-fringe . 11) (menu-bar-lines . 1) (tool-bar-lines . 1) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 15) (alpha) (fullscreen) (horizontal-scroll-bars . t) (display-type . color) (background-mode . dark) (cursor-color . "#F8F8F2") (environment) (mouse-color . "#F8F8F2") (frameset--id . "8D18-F13C-7809-9759") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (visibility . t) (display . "bigMacWork.local") (explicit-name) (tool-bar-position . top) (height . 53) (width . 171) (left . 447) (top . 231)) ((min-height . 4) (min-width . 40) (min-height-ignore . 3) (min-width-ignore . 16) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 56) (min-pixel-width . 281) (min-pixel-height-ignore . 42) (min-pixel-width-ignore . 112) (min-pixel-height-safe . 14) (min-pixel-width-safe . 28)) hc (pixel-width . 1233) (pixel-height . 728) (total-width . 176) (total-height . 52) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 211) (pixel-height . 728) (total-width . 30) (total-height . 52) (normal-height . 1.0) (normal-width . 0.17072181670721814) (buffer " *NeoTree*" (selected) (hscroll . 0) (fringes 10 11 nil) (margins nil) (scroll-bars 15 3 t nil) (vscroll . 0) (dedicated . t) (point . 170) (start . 1))) (leaf (last . t) (pixel-width . 1022) (pixel-height . 728) (total-width . 146) (total-height . 52) (normal-height . 1.0) (normal-width . 0.8292781832927818) (buffer "hudson.tasks.Maven.xml" (selected . t) (hscroll . 0) (fringes 10 11 nil) (margins nil) (scroll-bars 15 3 t nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/All_Projects/playground/docker-containers/"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/Users/mohana/All_Projects/playground/docker-containers/jenkins/master/hudson.tasks.Maven.xml"
+  "hudson.tasks.Maven.xml"
+  'nxml-mode
+  nil
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/mohana/All_Projects/playground/docker-containers/jenkins/master/credentials.xml"
+  "credentials.xml"
+  'nxml-mode
+  nil
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/mohana/All_Projects/playground/docker-containers/jenkins/master/config.xml"
+  "config.xml"
+  'nxml-mode
+  nil
+  5979
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/Users/mohana/All_Projects/playground/docker-containers/jenkins/master/build_image.sh"
+  "build_image.sh"
+  'sh-mode
+  nil
+  61
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/mohana/All_Projects/playground/docker-containers/jenkins/master/Dockerfile"
+  "Dockerfile"
+  'docker-mode
+  nil
+  581
+  '(613 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/mohana/All_Projects/playground/docker-containers/jenkins/master/jenkins_rsa"
+  "jenkins_rsa"
+  'fundamental-mode
+  nil
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/mohana/All_Projects/playground/docker-containers/jenkins/master/plugins.txt"
+  "plugins.txt"
+  'text-mode
+  nil
+  602
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/Users/mohana/All_Projects/playground/docker-containers/jenkins/master/settings.xml"
+  "settings.xml"
+  'nxml-mode
+  nil
+  2815
+  '(12657 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
