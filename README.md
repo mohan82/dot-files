@@ -1,4 +1,8 @@
-===All *nix dot files
+All *nix dot files
+==================
+
+
 
   * Emacs
-  * Bashrc 
+  * Basahrc 
+  * Vim  
