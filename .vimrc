@@ -1,41 +1,47 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+"My VimRc file
 
+set nocompatible
+filetype off
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
 " let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
+Bundle 'VundleVim/Vundle.vim'
 
-Plugin 'ekalinin/Dockerfile.vim'
-
-Plugin 'https://github.com/scrooloose/nerdtree.git'
-
-Plugin 'https://github.com/tpope/vim-fugitive.git'
-
-Plugin 'https://github.com/lrvick/Conque-Shell.git'
-
-Plugin 'https://github.com/xolox/vim-misc.git'
-
-Plugin 'https://github.com/xolox/vim-session.git'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
+"Core Bundles 
 "
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+
+
+
+" vim main plugins
+Bundle "sjl/gundo.vim"
+Bundle "bling/vim-airline"
+Bundle "jlanzarotta/bufexplorer"
+Bundle 'scrooloose/nerdtree.git'
+Bundle "rking/ag.vim"
+Bundle "edsono/vim-matchit"
+Bundle "tpope/vim-fugitive"
+Bundle "jiangmiao/auto-pairs"
+Bundle "xolox/vim-session"
+Bundle "xolox/vim-misc"
+Bundle "editorconfig/editorconfig-vim"
+Bundle "godlygeek/tabular"
+Bundle "airblade/vim-gitgutter"
+Bundle "easymotion/vim-easymotion"
+
+"Languages 
 "
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+Bundle 'lrvick/Conque-Shell.git'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'scrooloose/nerdcommenter.git'
+Bundle 'ahayman/vim-nodejs-complete.git'
+Bundle "scrooloose/syntastic.git"
+Bundle 'flazz/vim-colorschemes.git'
+Bundle "vim-scripts/tComment"
+Bundle 'ekalinin/Dockerfile.vim'
+Bundle 'plasticboy/vim-markdown'
+
+
 
 set tabstop=4
 set shiftwidth=4
@@ -45,6 +51,8 @@ set smarttab
 set expandtab
 syntax enable
 
-set autoindent
+set autoindent 
 set number
-colorscheme monokai
+syntax enable
+colorscheme candyman
+
