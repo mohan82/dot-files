@@ -50,6 +50,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'honza/vim-snippets'
 Plugin 'sidorares/node-vim-debugger'
 Plugin 'mmozuras/snipmate-mocha'
+Plugin 'mattn/emmet-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            
@@ -102,12 +103,8 @@ set cmdheight=1
 " set autoread
 
 " backup/persistance settings
-set directory=~/.vim/tmp/swap/
-set backupskip=/tmp/*,/private/tmp/*"
-set backup
-set writebackup
-set noswapfile
-
+set directory=~/.vim/tmp/swap/,.
+set backupdir=~/.vim/tmp/,.
 " persist (g)undo tree between sessions
 set undofile
 set history=100
