@@ -77,9 +77,9 @@ nnoremap <leader>sc :CloseSession<CR>
 """"""""""""""""""""""""""""""""
 set expandtab
 set smarttab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+"set shiftwidth=4
+"set softtabstop=4
+"set tabstop=4
 set autoindent
 set ruler
 set hidden
@@ -105,6 +105,9 @@ set cmdheight=1
 " backup/persistance settings
 set directory=~/.vim/tmp/swap/,.
 set backupdir=~/.vim/tmp/,.
+set noswapfile
+set nobackup
+set nowrite backup
 " persist (g)undo tree between sessions
 set undofile
 set history=100
