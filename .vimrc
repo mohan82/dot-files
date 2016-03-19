@@ -75,6 +75,7 @@ nnoremap <leader>sc :CloseSession<CR>
 " SETTINGS & KEYBINDINGS
 "
 """"""""""""""""""""""""""""""""
+set write
 set expandtab
 set smarttab
 "set shiftwidth=4
@@ -103,16 +104,22 @@ set cmdheight=1
 " set autoread
 
 " backup/persistance settings
-set directory=~/.vim/tmp/swap/,.
-set backupdir=~/.vim/tmp/,.
-set noswapfile
-set nobackup
-set nowrite backup
-" persist (g)undo tree between sessions
-set undofile
-set history=100
-set undolevels=100
 
+if isdirectory($HOME . '/.vim/.tmp') == 0
+          :silent !mkdir -m 700 -p ~/.vim/.tmp > /dev/null 2>&1
+endif
+set backupdir=~/.vim/.tmp ",~/.local/tmp/vim,/var/tmp,/tmp,
+set directory=~/.vim/.tmp ",~/.local/tmp/vim,/var/tmp,/tmp,
+set noswapfile
+" backup/persistance settings
+" persist (g)undo tree between sessions
+if isdirectory($HOME . '/.vim/undo') == 0
+            :silent !mkdir -m 700 -p ~/.vim/undo > /dev/null 2>&1                                                                
+endif
+set undofile                " Save undo's after file closes
+set undodir=$HOME/.vim/undo " where to save undo histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
 "
 """
 """
@@ -151,7 +158,7 @@ map <leader>l :wincmd l<CR>
 nnoremap <S-h> gT
 nnoremap <S-l> gt
 
-"Always open file in separate tab
+" Always open file in separate tab
 "
 :au BufAdd,BufNewFile,BufRead * nested tab sball
 
